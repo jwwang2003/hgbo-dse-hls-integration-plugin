@@ -1,4 +1,4 @@
-# hgbo-dse-hls-integration-plugin README
+# HGBO-DSE HLS VSC Plugin
 
 This is the README for your extension "hgbo-dse-hls-integration-plugin". After writing up a brief description, we recommend including the following sections.
 
