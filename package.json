@@ -14,10 +14,40 @@
   "contributes": {
     "commands": [
       {
+        "command": "hello-world.showHelloWorld",
+        "title": "Hello World (React + Vite): Show"
+      },
+      {
         "command": "hgbo-dse-hls-integration-plugin.helloWorld",
         "title": "Hello World"
       }
-    ]
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "compass",
+          "title": "Compass HGBO-DSE",
+          "icon": "media/icon.png"
+        }
+      ]
+    },
+    "views": {
+      "compass": [
+        {
+          "type": "webview",
+          "id": "compass-flow",
+          "name": "HLS Flow"
+        },
+        {
+          "id": "compass-tdm",
+          "name": "TDM Config"
+        },
+        {
+          "id": "compass-settings",
+          "name": "Settings"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "yarn run package",
